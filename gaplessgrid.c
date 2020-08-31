@@ -6,6 +6,11 @@ gaplessgrid(Monitor *m) {
 	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++) ;
 	if(n == 0)
 		return;
+	if(n == 1){
+		c = nexttiled(m->clients);
+		resize(c, m->wx, m->wy, m->ww - 2 * c->bw, m->wh - 2 * c->bw, 0);
+		return;
+	}
 
 	/* grid dimensions */
 	for(cols = 0; cols <= n/2; cols++)
@@ -22,10 +27,10 @@ gaplessgrid(Monitor *m) {
 	for(i = 0, c = nexttiled(m->clients); c; i++, c = nexttiled(c->next)) {
 		if(i/rows + 1 > cols - n%cols)
 			rows = n/cols + 1;
-		ch = rows ? m->wh / rows : m->wh;
-		cx = m->wx + cn*cw;
-		cy = m->wy + rn*ch;
-		resize(c, cx, cy, cw - 2 * c->bw, ch - 2 * c->bw, False);
+		ch = rows ? (m->wh-m->gappx) / rows : m->wh;
+		cx = m->wx + m->gappx + cn*cw;
+		cy = m->wy + m->gappx + rn*ch;
+		resize(c, cx - cn*m->gappx/cols, cy, cw - 2 * (c->bw) - m->gappx - m->gappx/cols, ch - 2 * c->bw - m->gappx, False);
 		rn++;
 		if(rn >= rows) {
 			rn = 0;
