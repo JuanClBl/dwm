@@ -6,6 +6,7 @@ static const int gappx              = 10;       /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
+static const int focusonwheel       = 0;
 static const char *fonts[]          = { "NotoSansMono Nerd Font:size=10:style=Bold:antialias=true:autohint=true", "Noto Color Emoji:size=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "NotoSansMono Nerd Font:size=10:style=Bold:antialias=true:autohint=true";
 static const char col_gray1[]       = "#222222";
