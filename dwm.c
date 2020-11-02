@@ -580,10 +580,6 @@ buttonpress(XEvent *e)
 			}
 		}
 	} else if ((c = wintoclient(ev->window))) {
-		focus(c);
-		restack(selmon);
-		XAllowEvents(dpy, ReplayPointer, CurrentTime);
-		click = ClkClientWin;
 		if (focusonwheel || (ev->button != Button4 && ev->button != Button5))
                         focus(c);
                 XAllowEvents(dpy, ReplayPointer, CurrentTime);
