@@ -79,7 +79,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 
 /* commands spawned when clicking statusbar, the mouse button pressed is exported as BUTTON */
-static char *statuscmds[] = { "notify-send Mouse$BUTTON", "st update", "st man $(find /usr/share/man/man* -type f | shuf | head -1)", "" };
+static char *statuscmds[] = { "notify-send Mouse$BUTTON", "st update", "st man $(find /usr/share/man/man[!3] -type f | shuf | head -1)", "" };
 static char *statuscmd[] = { "/bin/sh", "-c", NULL, NULL };
 
 static Key keys[] = {
