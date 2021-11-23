@@ -14,12 +14,12 @@ attachabove ❌
 attachaside ❌
 attachasideandbelow ❌
 attachbelow ❌
-attachbottom ❌
+attachbottom ✅
 attachdirection ❌
 attachtop ❌
 autoresize ❌
 autostart ❌
-awesomebar ❌
+awesomebar ✅
 azerty ❌
 bar height ❌
 barpadding ❌
@@ -31,7 +31,7 @@ canfocusrule ❌
 center ❌
 center first window ❌
 centeredmaster ❌
-centeredwindowname ❌
+centeredwindowname ✅
 centretitle ❌
 cfacts ❌
 clientindicators ❌
@@ -75,7 +75,7 @@ floatrules ❌
 focusadjacenttag ❌
 focusmaster ❌
 focusmonmouse ❌
-focusonclick ❌
+focusonclick ✅
 focusonnetactive ❌
 focusurgent ❌
 freespace ❌
@@ -90,7 +90,7 @@ goatcmd ❌
 goback ❌
 graballkeycodes ❌
 gridmode ❌
-hide vacant tags ❌
+hide vacant tags ✅
 hideborder ❌
 historical ❌
 holdbar ❌
@@ -146,11 +146,11 @@ reorganizetags ❌
 resetlayout ❌
 resetnmaster ❌
 resizecorners ❌
-restartsig ❌
+restartsig ✅
 rmaster ❌
 rotatestack ❌
 rotatetags ❌
-ru gaps ❌
+ru gaps ✅
 save floats ❌
 scheme switch ❌
 scratchpad ❌
@@ -163,7 +163,7 @@ setborderpx ❌
 setstatus ❌
 shift tools ❌
 showselmon ❌
-shutdowncmd ❌
+shutdowncmd ✅
 single tagset ❌
 singularborders ❌
 sizehints ❌
@@ -179,7 +179,7 @@ staticstatus ❌
 status2d ❌
 statusallmons ❌
 statusbutton ❌
-statuscmd ❌
+statuscmd ✅
 statuscolors ❌
 statuspadding ❌
 stdin ❌
@@ -191,7 +191,7 @@ swapfocus ❌
 swaptags ❌
 switchcol ❌
 switchtotag ❌
-systray ❌
+systray ✅
 tab ❌
 tag previews ❌
 tagall ❌
@@ -214,7 +214,7 @@ vanitygaps ❌
 viewontag ❌
 vtcolors ❌
 warp ❌
-winicon ❌
+winicon ✅
 winview ❌
 xfce4 panel ❌
 xkb ❌
