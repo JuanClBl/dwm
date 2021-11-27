@@ -11,6 +11,8 @@ static const int showsystray        = 1;        /* 0 means no systray */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
+#define ICONSIZE 16                             /* icon size */
+#define ICONSPACING 5                           /* space between icon and title */
 static const int focusonwheel       = 0;
 static const char *fonts[]          = { "NotoSansMono Nerd Font:size=10:style=Bold:antialias=true:autohint=true", "Noto Color Emoji:size=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "NotoSansMono Nerd Font:size=10:style=Bold:antialias=true:autohint=true";
