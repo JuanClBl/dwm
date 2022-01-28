@@ -586,7 +586,7 @@ buttonpress(XEvent *e)
 		} else if (ev->x < x + blw)
 			click = ClkLtSymbol;
 		/* 2px right padding */
-		else if (ev->x > (x = selmon->ww - TEXTW(stext) - getsystraywidth() + lrpad - 2)) {
+		else if (ev->x > (x = selmon->ww - (int)TEXTW(stext) - getsystraywidth() + lrpad - 2)) {
 			click = ClkStatusText;
 
 			char *text = rawstext;
@@ -956,6 +956,9 @@ drawbar(Monitor *m)
 	unsigned int i, occ = 0, urg = 0;
 	Client *c;
 
+	if (!m->showbar)
+		return;
+
 	if(showsystray && m == systraytomon(m))
                 stw = getsystraywidth();
 
@@ -1092,7 +1095,7 @@ focusstack(const Arg *arg)
 {
 	Client *c = NULL, *i;
 
-	if (!selmon->sel)
+	if (!selmon->sel || (selmon->sel->isfullscreen && lockfullscreen))
 		return;
 	if (arg->i > 0) {
 		for (c = selmon->sel->next; c && !ISVISIBLE(c); c = c->next);
