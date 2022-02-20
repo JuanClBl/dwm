@@ -86,7 +86,7 @@ static const char *shutdowncmd[]  = { "sudo", "shutdown", "+0", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 /* commands spawned when clicking statusbar, the mouse button pressed is exported as BUTTON */
-static char *statuscmds[] = { "notify-send Mouse$BUTTON", "st update", "st man $(find /usr/share/man/man[!3] -type f | shuf | head -1)", "" };
+static char *statuscmds[] = { "st update", "", "st man $(find /usr/share/man/man[!3] -type f | shuf | head -1)", "", "st btop","", "st -e zsh -c 'curl \"wttr.in/$(<~/.vars/postcode)?lang=es\";read -k1 -s'", "" };
 static char *statuscmd[] = { "/bin/sh", "-c", NULL, NULL };
 
 static Key keys[] = {
