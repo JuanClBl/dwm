@@ -14,8 +14,11 @@ static const int topbar             = 0;        /* 0 means bottom bar */
 #define ICONSIZE 16                             /* icon size */
 #define ICONSPACING 5                           /* space between icon and title */
 static const int focusonwheel       = 0;
-static const char *fonts[]          = { "NotoSansMono Nerd Font:size=10:style=Bold:antialias=true:autohint=true", "Noto Color Emoji:size=12:antialias=true:autohint=true" };
-static const char dmenufont[]       = "NotoSansMono Nerd Font:size=10:style=Bold:antialias=true:autohint=true";
+static const char *fonts[]          = { "MesloLGS Nerd Font NoEmoji:size=10:style=Bold:antialias=true:autohint=true",
+					"Noto Color Emoji:size=12:antialias=true:autohint=true",
+					"Noto Sans Symbols:size=10:style=Bold:antialias=true:autohint=true",
+					"Noto Sans Symbols2:size=10:style=Bold:antialias=true:autohint=true" };
+static const char dmenufont[]       = "MesloLGS Nerd Font NoEmoji:size=10:style=Bold:antialias=true:autohint=true";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
