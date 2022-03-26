@@ -24,7 +24,6 @@
 #include <locale.h>
 #include <signal.h>
 #include <stdarg.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
@@ -163,17 +162,6 @@ struct Monitor {
 	Window barwin;
 	const Layout *lt[2];
 };
-
-typedef struct {
-	const char *class;
-	const char *instance;
-	const char *title;
-	unsigned int tags;
-	int isfloating;
-	int isterminal;
-	int noswallow;
-	int monitor;
-} Rule;
 
 typedef struct Systray   Systray;
 struct Systray {

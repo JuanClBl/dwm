@@ -1,5 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
+#include "dwm.h"
+
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const int gappx              = 10;       /* gaps between windows */
@@ -24,7 +26,6 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
-enum { SchemeNorm, SchemeSel, SchemeHid }; /* color schemes*/
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
